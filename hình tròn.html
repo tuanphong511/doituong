@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Circle{
+    constructor(R , M) {
+      this.radius =  R
+      this.color = M
+    }
+    getRadius(){
+      document.write('bán kính:' + this.radius +'<br>')
+    }
+    getColor(){
+      document.write('màu:' + this.color + '<br>')
+    }
+    getS(){
+      document.write('diện tích là'+ Math.PI * this.radius * this.radius + '<br>')
+    }
+
+  }
+  let ob = new Circle(3 , 'yellow')
+  ob.getRadius()
+  ob.getColor()
+  ob.getS()
+</script>
+
+</body>
+</html>

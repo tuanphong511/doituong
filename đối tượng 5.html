@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class rectangle{
+    constructor(w , h) {
+      this.width = w
+      this.height = h
+    }
+    getInfo(){
+      alert(this.width + ',' + this.height)
+    }
+    getS (){
+      alert(this.width * this.height)
+    }
+    getP(){
+      alert((this.width + this.height)*2)
+    }
+  }
+  let DT = new rectangle(2, 5)
+  let CV =new rectangle(2,5)
+  DT.getInfo()
+  DT.getS()
+  CV.getInfo()
+  CV.getP()
+</script>
+
+</body>
+</html>

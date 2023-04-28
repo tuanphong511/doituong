@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MyDate{
+        constructor(D , M , Y) {
+            this.Day = D
+            this.Month = M
+            this.Year = Y
+        }
+        getDay() {
+            document.write('ngày ' + this.Day)
+        }
+        getMonth() {
+            document.write('tháng ' + this.Month)
+        }
+        getYear(){
+            document.write('năm ' + this.Year)
+        }
+    }
+    let Me = new MyDate(27 , 4 ,2023)
+    Me.getDay()
+    Me.getMonth()
+    Me.getYear()
+</script>
+
+</body>
+</html>

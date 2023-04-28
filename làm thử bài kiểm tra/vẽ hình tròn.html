@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="cv" width="800" height="300" style="border: 5px solid"></canvas>
+<script>
+  class Circle{
+    constructor(x , y, R , c ) {
+      this.x = x
+      this.y = y
+      this.radius = R
+      this.color = c
+    }
+    draw(){
+      let cv = document.getElementById('cv').getContext('2d')
+      cv.fillStyle = this.color
+      cv.arc(this.x , this.y ,this.radius, 0, 2*Math.PI )
+      cv.fill()
+    }
+  }
+  let tron= new Circle(50 , 50 , 20 , 0 , 2*Math.PI , 'yellow')
+  tron.draw()
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature{
+    constructor(C) {
+      this.Celsius = C
+    }
+
+    getF(){
+      alert( 'độ F là' +9/5 * this.Celsius +32)
+    }
+    getK(){
+        alert('độ K là'+ this.Celsius + 273.15)
+    }
+  }
+  let PV = new Temperature(25)
+  PV.getF()
+  PV.getK()
+
+
+
+</script>
+
+</body>
+</html>

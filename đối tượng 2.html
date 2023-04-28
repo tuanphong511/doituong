@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="display"></div>
+<script>
+    let listName = ['ip12','ip13','ip14']
+    let listPrice = ['100','101','102']
+    let listAmount = ['10','20','30']
+    let str = ''
+    for (let i = 0 ; i < listName.length; i++){
+        str += listName[i] +','+ listPrice[i] +','+ listAmount[i] + '<br>'
+    }
+    document.getElementById('display').innerHTML=str
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="cv" width="800" height="300" style="border: 2px solid"></canvas>
+<script>
+  class Rec {
+    constructor(x , y , w , h , c) {
+      this.x = x
+      this.y = y
+      this.width = w
+      this.height = h
+      this.color = c
+    }
+    draw(){
+      let cv =document.getElementById('cv').getContext('2d')
+      cv.fillStyle = this.color
+      cv.fillRect(this.x , this.y , this.width ,this.height)
+    }
+  }
+  let hcn = new Rec(10,10,300,100,'blue')
+  hcn.draw()
+</script>
+
+</body>
+</html>
